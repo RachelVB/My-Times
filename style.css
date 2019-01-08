@@ -1,0 +1,192 @@
+/* Universal content */
+.img-content {
+    height: 300px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.stories {
+    /* How did we get .fall-cancelled and .pop-culture containers beside eachother?? We used the display: flex. */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.news-bites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+}
+
+
+/* This container controls both .header-item1 and item2. So thats why we just Justify-content in the container to set the behaviour of its children divs. */
+.header-container {
+    display: flex;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: flex-start;
+    border-bottom: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    height: 80px;
+}
+
+.header-item1 {
+    flex-basis: 90px;
+    margin-top: 1px;
+} 
+
+/* I could not get my logo aligned till I used flex and flex-basis property. */
+.header-item2 {
+    flex: 1;
+}
+
+.header-item2 h2 {
+    color: aquamarine;
+    font-size: 16px;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    list-style: none;
+    justify-content: space-around;
+    width: 80px;
+    text-decoration: underline;
+}
+
+/* Center section of our webpage. */
+
+.main-container {
+    display: flex;
+    width: 1300px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 78px;
+    margin-left: auto;
+    padding-top: 116px;
+}
+
+/* div {
+    border: 1px solid black;
+} */
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 32px;
+}
+
+.column.large {
+    width: 630px;
+  }
+
+
+.lead-story .img-content {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    margin-top: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 40px;
+    text-align: left;
+}
+
+.fall-cancelled.img-content {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+    background-repeat: no-repeat;
+}
+
+.pop-culture.img-content {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png);
+    background-repeat: no-repeat;
+}
+
+.column.medium {
+    width: 300px;
+  }
+
+.cat-ceo.img-content {
+      background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+      background-repeat: no-repeat;
+  }
+  
+.column.small {
+    width: 275px;
+}
+
+
+.bite {
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 15px;
+    color: DimGray;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-top: 20px;
+    height: 50px;
+    margin: 0;
+}
+
+.news-bites h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cookie {
+    align-content: center;
+}
+
+/* div {
+    border: 1px solid black;
+} */
+
+.footer-container {
+    display: flex;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container h2 {
+    height: 20px;
+    width: 100px;
+    border-right: 4px solid white;
+    color: white;
+    padding-right: 30px;
+}
+
+.footer-nav ul li {
+    list-style: none;
+    text-decoration: underline;
+    display: inline;
+    padding: 10px;
+} 
+
+.copyright {
+    display: flex;
+    background-color: MediumAquamarine;
+    margin-top: -130px;
+    justify-content: center;
+    align-items: flex-end;
+}
